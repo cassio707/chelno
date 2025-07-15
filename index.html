@@ -171,23 +171,21 @@
         <button class="enter-button" onclick="enterSite()">ورود به سایت</button>
     </div>
 
-    <script>
-        function enterSite() {
-            // Add your site entry logic here
-            alert('خوش آمدید!');
-            // Example: window.location.href = 'dashboard.html';
-        }
+<script>
+    function enterSite() {
+        window.location.href = 'https://chelno.com';
+    }
 
-        // Add some interactive particles
-        document.addEventListener('mousemove', function(e) {
-            const shapes = document.querySelectorAll('.shape');
-            shapes.forEach((shape, index) => {
-                const speed = (index + 1) * 0.01;
-                const x = e.clientX * speed;
-                const y = e.clientY * speed;
-                shape.style.transform = `translate(${x}px, ${y}px)`;
-            });
+    // Add some interactive particles
+    document.addEventListener('mousemove', function(e) {
+        const shapes = document.querySelectorAll('.shape');
+        shapes.forEach((shape, index) => {
+            const speed = (index + 1) * 0.01;
+            const x = e.clientX * speed;
+            const y = e.clientY * speed;
+            shape.style.transform = `translate(${x}px, ${y}px)`;
         });
-    </script>
+    });
+</script>
 </body>
 </html>
